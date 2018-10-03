@@ -1,0 +1,30 @@
+#show{
+    height: 450px;
+}
+
+.img-thumbnail img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.img-thumbnail{
+    padding: 0px;
+    margin-bottom: 17px;
+}
+
+.img-thumbnail .caption-full{
+    padding: 11px;
+}
+
+.container{
+    margin-top: 15px;
+}
+
+.card{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#deleteCampground{
+    display: inline;
+}

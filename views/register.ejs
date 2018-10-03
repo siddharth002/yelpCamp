@@ -1,0 +1,18 @@
+<% include ./partials/header.ejs%>
+
+<div class="container">
+        <div  style="width:300px;margin:0 auto">
+            <h1>Register</h1>
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <input type="text" placeholder="username" name="username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="password" name="password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    SignUp
+                </button>
+            </form>
+        </div>
+</div>

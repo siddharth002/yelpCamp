@@ -1,0 +1,22 @@
+<% include ../partials/header.ejs %>
+<div class="container">
+    <header class="jumbotron">
+        <h1>This is hi from yelp camp</h1>
+        <p><a class="btn btn-primary" href="/campground/new">Add new campground</a></p>
+    </header>
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <% campground.forEach((val) =>{%>
+            <div class="col-md-3 col-sm-6">
+                    <div class="caption">
+                            <h4><%= val.name%></h4>
+                    </div>
+                    <div class="img-thumbnail">
+                        <img src="<%= val.image%>" class="img-fluid" alt="">
+                    </div>
+                    <p>
+                        <a href="/campground/<%= val.id%>" class="btn btn-primary my-3">More Info</a>
+                    </p>
+             </div>
+        <%})%>
+    </div>  
+</div>
